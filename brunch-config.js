@@ -1,12 +1,16 @@
 module.exports = {
 	files: {
 		javascripts: {
-			joinTo: 'js/app.js',
+			joinTo: 'public/js/app.js',
 			order: {
 				before: 'app/js/initialize.js'
 			}
 		},
-		stylesheets: {joinTo: 'css/app.css'}
+		stylesheets: {joinTo: 'public/css/app.css'}
+	},
+
+	paths: {
+		public: 'build'
 	},
 
 	npm: {
